@@ -11,5 +11,7 @@ if (!variable_global_exists("first_play")) {
 
 menu_state = "main";
 menu_options = ["Start", "Parameters", "Quit"];
+submenu_options = ["Continue", "Reset"];
+submenu_choice = 0;
 menu_choice = 0;
 pulse = 0; // для анимации

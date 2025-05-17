@@ -26,3 +26,29 @@ if (menu_state == "main") {
 
     draw_set_alpha(1); // сброс всего
 }
+
+if (menu_state == "submenu") {
+    draw_set_font(fnt_menu);
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_middle);
+
+    var sx = 20;
+    var sy = display_get_gui_height() - 120;
+
+    for (var i = 0; i < array_length(submenu_options); i++) {
+        var yy = sy + i * 40;
+
+        if (i == submenu_choice) {
+            var alpha = 0.6 + 0.4 * sin(pulse);
+            draw_set_color(c_yellow);
+            draw_set_alpha(alpha);
+        } else {
+            draw_set_color(c_white);
+            draw_set_alpha(1);
+        }
+
+        draw_text(sx, yy, submenu_options[i]);
+    }
+
+    draw_set_alpha(1);
+}
