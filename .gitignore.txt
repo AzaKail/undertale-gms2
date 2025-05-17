@@ -1,0 +1,9 @@
+# GameMaker junk
+*.yy~
+*.yyp~
+*.log
+.config/
+.idea/
+extensions/
+cache/
+temp/
