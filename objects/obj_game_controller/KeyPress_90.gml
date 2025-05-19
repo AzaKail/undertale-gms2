@@ -5,7 +5,7 @@ if (menu_state == "main") {
     switch (menu_options[menu_choice]) {
         case "Start":
             if (global.first_play) {
-                room_goto(rm_intro_fall);
+                room_goto(rm_testroom);
             } else {
                 menu_state = "submenu";
                 submenu_choice = 0;
