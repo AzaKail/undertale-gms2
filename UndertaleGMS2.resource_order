@@ -24,6 +24,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_player","order":1,"path":"objects/obj_player/obj_player.yy",},
+    {"name":"obj_room_transition","order":2,"path":"objects/obj_room_transition/obj_room_transition.yy",},
     {"name":"obj_warp","order":1,"path":"objects/obj_warp/obj_warp.yy",},
     {"name":"rm_main_menu","order":1,"path":"rooms/rm_main_menu/rm_main_menu.yy",},
     {"name":"rm_testroom_2","order":2,"path":"rooms/rm_testroom_2/rm_testroom_2.yy",},
