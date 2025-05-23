@@ -1,44 +1,53 @@
+// Управление
+var x_input = keyboard_check(vk_right) - keyboard_check(vk_left);
+var y_input = keyboard_check(vk_down) - keyboard_check(vk_up);
+
+// Ускорение при беге
+is_running = keyboard_check(ord("X"));
+move_spd = is_running ? 2 : 1;
+
+
+
+// Скорость
+xspd = x_input * move_spd;
+yspd = y_input * move_spd;
+
+// Направление и танец
+var dir = "";
+var dancing = false;
+
+if (x_input != 0) {
+    dir = (x_input > 0) ? "right" : "left";
+} else if (keyboard_check(vk_up) && keyboard_check(vk_down)) {
+    dancing = true;
+    dir = (current_time div 150) mod 2 == 0 ? "up" : "down";
+} else if (y_input != 0) {
+    dir = (y_input > 0) ? "down" : "up";
+}
+
+//коллизия
+if (place_meeting(x + xspd, y, obj_wall)) xspd = 0;
+if (place_meeting(x, y + yspd, obj_wall)) yspd = 0;
+
+// Тип движения
+var move_type = is_running ? "run" : "walk";
+
+// Получение ключа и спрайта
+if (dir != "") {
+    var key = player_appearance + "_" + move_type + "_" + dir;
+    var sprite = variable_struct_get(sprite_table, key);
+    
+    if (sprite != undefined) {
+        sprite_index = sprite;
+        image_speed = 1;
+    }
+} else {
+    image_speed = 0;
+    image_index = 0;
+}
+
+
+
 // Передвижение
-right_key = keyboard_check(vk_right);
-left_key = keyboard_check(vk_left);
-up_key = keyboard_check(vk_up);
-down_key = keyboard_check(vk_down);
-
-xspd = (right_key - left_key) * move_spd;
-yspd = (down_key - up_key) * move_spd;
-
-// коллизия
-if place_meeting(x+xspd, y, obj_wall){
-	xspd = 0;
-}
-
-if place_meeting(x, y+yspd, obj_wall){
-	yspd = 0;
-}
-
-// анимация передвижения
-if xspd > 0 {
-	sprite_index = sPlayerRight;
-}
-else if xspd < 0 {
-	sprite_index = sPlayerLeft;
-}
-else if yspd > 0 {
-	sprite_index = sPlayerDown;
-}
-else if yspd < 0 {
-	sprite_index = sPlayerUp;
-}
-
-
-if (xspd != 0 or yspd != 0){
-	image_speed = 1;
-}
-else {
-	image_speed = 0;
-	image_index = 0;
-}
-
-// обязательно после коллизии -_-
 x += xspd;
 y += yspd;
