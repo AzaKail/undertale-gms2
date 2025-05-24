@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"playerClassic",
-    "path":"folders/Sprites/playerClassic.yy",
+    "path":"folders/Sprites/ruins/playerClassic.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

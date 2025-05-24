@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_load_game",
+  "%Name":"is_dialogue_active",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_load_game",
+  "name":"is_dialogue_active",
   "parent":{
-    "name":"saving",
-    "path":"folders/Scripts/saving.yy",
+    "name":"dialogue",
+    "path":"folders/Scripts/dialogue.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

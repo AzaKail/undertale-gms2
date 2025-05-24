@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"obj_interact_zone_test",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_interact_zone_test",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"forDialogueWindowBlack",
+    "path":"folders/Objects/gameModific/forDialogueWindowBlack.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sPlayerDown",
-    "path":"sprites/sPlayerDown/sPlayerDown.yy",
+    "name":"FroggitOverworld",
+    "path":"sprites/FroggitOverworld/FroggitOverworld.yy",
   },
   "spriteMaskId":null,
   "visible":true,

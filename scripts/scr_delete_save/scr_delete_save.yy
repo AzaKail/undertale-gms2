@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_delete_save",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"saving",
+    "path":"folders/Scripts/saving.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
