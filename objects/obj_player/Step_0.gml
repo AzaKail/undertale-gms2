@@ -16,6 +16,11 @@ yspd = y_input * move_spd;
 var dir = "";
 var dancing = false;
 
+// Замирание при диалоге
+if (is_dialogue_active()) exit;
+
+
+
 if (x_input != 0) {
     dir = (x_input > 0) ? "right" : "left";
 } else if (keyboard_check(vk_up) && keyboard_check(vk_down)) {
