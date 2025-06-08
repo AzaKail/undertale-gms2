@@ -23,10 +23,12 @@ if (is_dialogue_active()) exit;
 
 if (x_input != 0) {
     dir = (x_input > 0) ? "right" : "left";
-} else if (keyboard_check(vk_up) && keyboard_check(vk_down)) {
+} 
+else if (keyboard_check(vk_up) && keyboard_check(vk_down)) {
     dancing = true;
     dir = (current_time div 150) mod 2 == 0 ? "up" : "down";
-} else if (y_input != 0) {
+} 
+else if (y_input != 0) {
     dir = (y_input > 0) ? "down" : "up";
 }
 

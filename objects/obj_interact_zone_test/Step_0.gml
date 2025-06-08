@@ -5,7 +5,7 @@ var dist = point_distance(x, y, obj_player.x, obj_player.y);
 // - не в диалоге
 // - рядом
 // - не заблокировано
-if (keyboard_check_pressed(ord("Z")) && dist < 32 && !is_dialogue_active() && !dialogue_locked) {
+if (keyboard_check_pressed(ord("Z")) && dist < 16 && !is_dialogue_active() && !dialogue_locked) {
     scr_show_dialogue(interact_text);
     dialogue_locked = true; // блок повтор
 }
