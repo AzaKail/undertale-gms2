@@ -33,8 +33,8 @@ else if (y_input != 0) {
 }
 
 //коллизия
-if (place_meeting(x + xspd, y, obj_wall)) xspd = 0;
-if (place_meeting(x, y + yspd, obj_wall)) yspd = 0;
+if (place_meeting(x + xspd, y, obj_solid)) xspd = 0;
+if (place_meeting(x, y + yspd, obj_solid)) yspd = 0;
 
 // Тип движения
 var move_type = is_running ? "run" : "walk";

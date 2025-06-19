@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_init_player_defaults",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_init_player_defaults",
+  "parent":{
+    "name":"saving",
+    "path":"folders/Scripts/saving.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

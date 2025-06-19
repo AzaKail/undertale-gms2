@@ -3,11 +3,8 @@ function scr_delete_save() {
         file_delete("save.ini");
     }
 
-    // Сброс всех глобальных данных
     global.first_play = true;
-    global.lv = 1;
-    global.exp = 0;
-    global.karma = 0;
-    global.route = "neutral";
-    global.can_spare = false;
+
+    // сбросим все остальные данные
+    scr_init_player_defaults();
 }

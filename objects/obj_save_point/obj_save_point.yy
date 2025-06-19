@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_interact_zone_test",
+  "%Name":"obj_save_point",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_interact_zone_test",
+  "name":"obj_save_point",
   "overriddenProperties":[],
   "parent":{
-    "name":"forDialogueWindowBlack",
-    "path":"folders/Objects/gameModific/forDialogueWindowBlack.yy",
+    "name":"gameModific",
+    "path":"folders/Objects/gameModific.yy",
   },
   "parentObjectId":{
     "name":"obj_solid",
@@ -34,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"FroggitOverworld",
-    "path":"sprites/FroggitOverworld/FroggitOverworld.yy",
+    "name":"spr_save_point",
+    "path":"sprites/spr_save_point/spr_save_point.yy",
   },
   "spriteMaskId":null,
   "visible":true,
